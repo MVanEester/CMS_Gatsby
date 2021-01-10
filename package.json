@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "cms-examenopdracht-products",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Dit is een examen opdracht voor het vak CMS Development.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Van Eester Michiel",
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^2.26.1",
