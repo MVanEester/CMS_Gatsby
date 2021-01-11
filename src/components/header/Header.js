@@ -20,12 +20,11 @@ const Header = ({ siteTitle }) => {
         }
       }
     }
-  `);
+  `)
 
   return (
     <HeaderWrapper>
-      <div>Menu</div>
-      {/* <Menu menuItems={menuItems.edges}/> */}
+      {/* <Menu menuItems={menuItems.edges} /> */}
     </HeaderWrapper>
   )
 }
