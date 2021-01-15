@@ -47,6 +47,17 @@ const IndexPage = () => {
               muzieknummersMeta {
                 title
                 artist
+                coverPhoto {
+                  altText
+                  sourceUrl
+                  imageFile {
+                    childImageSharp {
+                      fluid(quality: 100, grayscale: true) {
+                        ...GatsbyImageSharpFluid_withWebp
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -81,6 +92,10 @@ const IndexPage = () => {
           <div className="artist-items">
             {homePageFeaturedProducts.map(({ muzieknummersMeta, slug }) => (
               <Artist key={slug} to={`/${slug}`}>
+                <Image 
+                  fluid={muzieknummersMeta.coverPhoto.imageFile.childImageSharp.fluid}
+                  alt={muzieknummersMeta.coverPhoto.altText}
+                />
                 <div className="artist-info">
                   <p>
                     {muzieknummersMeta.title}
