@@ -99,6 +99,7 @@ const Productoverzicht = () => {
                     {muzieknummersMeta.title}
                   </p>
                   {muzieknummersMeta.artist && <p>{muzieknummersMeta.artist}</p>}
+                  {muzieknummersMeta.artist2 && <p>ft. {muzieknummersMeta.artist2}</p>}
                 </div>
               </Artist>
             ))}
